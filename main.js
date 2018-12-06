@@ -55,3 +55,6 @@ var roastSelection = document.querySelector('#roast-selection');
 tbody.innerHTML = renderCoffees(coffees);
 
 submitButton.addEventListener('click', updateCoffees);
+
+var lightCity = document.querySelector("two");
+lightCity.innerText = coffees[1].name;
