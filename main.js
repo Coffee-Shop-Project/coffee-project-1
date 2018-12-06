@@ -66,6 +66,7 @@ var submitButton = document.querySelector('#submit');
 var roastSelection = document.querySelector('#roast-selection');
 
 div.innerHTML = renderCoffees(coffees);
+
 coffees.sort(
     function (a, b) {
         if (a.id > b.id) return -1;

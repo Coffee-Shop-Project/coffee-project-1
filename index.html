@@ -8,13 +8,17 @@
 <body>
     <h1>Coffee!</h1>
 
-    <form>
+    <form method="get" action="input">
         <label for="roast-selection"></label>
         <select id="roast-selection">
             <option>light</option>
             <option>medium</option>
             <option>dark</option>
         </select>
+        <div>
+            <label for="searchCoffee"></label>
+            <input id="searchCoffee" name="searchCoffee" type="text">
+        </div>
         <input id="submit" type="submit" />
     </form>
 
