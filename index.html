@@ -2,41 +2,72 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <title>Coffee Shop</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Coffee!</h1>
+<div class="container">
+    <h1 class="text-center">Coffee!</h1>
+    <hr class="w-90">
+</div>
 
-    <form method="get" action="input">
-        <label for="roast-selection"></label>
-        <select id="roast-selection">
-            <option>light</option>
-            <option>medium</option>
-            <option>dark</option>
-        </select>
-        <div>
-            <label for="Coffees1"></label>
-            <input id="Coffees1" name="searchCoffee" type="text" oninput="updateResult(this.value)" placeholder = "search">
+<!--Two Column Section-->
+<div class="container">
+    <div class="row padding">
 
+        <div class="col-lg-6 text-center">
+            <div id="coffees" class="row"></div>
         </div>
-        <input id="submit" type="submit" />
-    </form>
 
-    <!--<table>-->
-        <!--<thead>-->
-            <!--<tr>-->
-                <!--<th>ID</th>-->
-                <!--<th>NAME</th>-->
-                <!--<th>ROAST</th>-->
-            <!--</tr>-->
-        <!--</thead>-->
-        <!--<tbody id="coffees"></tbody>-->
-    <!--</table>-->
+        <div class="col-lg-6">
+            <form method="get" action="input"><!-- Form 1 -->
+                <div>
+                    <!-- Select Input -->
+                    <label for="roast-selection" class="d-block w-75"><h5>Roast</h5></label>
+                    <select id="roast-selection" class="d-block w-75">
+                        <option>all</option>
+                        <option>light</option>
+                        <option>medium</option>
+                        <option>dark</option>
+                    </select>
+                </div>
+                <!-- Search Box -->
+                <div>
+                    <label for="userInput" class="d-block w-75"><h5>Coffee</h5></label>
+                    <input id="userInput" name="userInput" type="search" oninput="updateResult(this.value)" placeholder="Search..." class="w-75">
+                    <!-- Submit Button -->
+                    <input id="submit" type="submit" />
+                </div>
+            </form>
+            <hr class="w-90">
 
-<div id="Coffees"></div>
+            <form><!-- Form 2 -->
+                <h1 class="text-center">Add a Coffee</h1>
+                <div>
+                    <!-- Select Input -->
+                    <label for="roast-selection2" class="d-block w-75"><h5>Roast</h5></label>
+                    <select id="roast-selection2" class="d-block w-75">
+                        <option>all</option>
+                        <option>light</option>
+                        <option>medium</option>
+                        <option>dark</option>
+                    </select>
+                </div>
+                <!-- Search Box -->
+                <div>
+                    <label for="userInput2" class="d-block w-75"><h5>Name</h5></label>
+                    <input id="userInput2" name="userInput" type="search" class="w-75">
+                    <!-- Submit Button -->
+                    <input id="addCoffee" type="submit" />
+                </div>
+            </form>
+        </div>
 
+    </div>
+</div>
 
-    <script src="main.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
