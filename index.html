@@ -25,8 +25,8 @@
             <form method="get" action="input"><!-- Form 1 -->
                 <div>
                     <!-- Select Input -->
-                    <label for="roast-selection" class="d-block w-75"><h5>Roast</h5></label>
-                    <select id="roast-selection" class="d-block w-75">
+                    <label for="roast-selection" class="d-block w-75 font-weight-bold">Roast</label>
+                    <select id="roast-selection" class="d-block w-75 mb-2">
                         <option>all</option>
                         <option>light</option>
                         <option>medium</option>
@@ -35,32 +35,35 @@
                 </div>
                 <!-- Search Box -->
                 <div>
-                    <label for="userInput" class="d-block w-75"><h5>Coffee</h5></label>
-                    <input id="userInput" name="userInput" type="search" oninput="updateResult(this.value)" placeholder="Search..." class="w-75">
-                    <!-- Submit Button -->
-                    <input id="submit" type="submit" />
+                    <label for="userInput" class="d-block w-75 font-weight-bold">Coffee</label>
+                    <input id="userInput" name="userInput" type="search" oninput="updateResult(this.value)" placeholder="Search..." class="w-75 mb-2">
+                </div>
+                <!-- Submit Button -->
+                <div>
+                    <input id="submit" type="submit" class="d-block w-75 bg-primary"/>
                 </div>
             </form>
             <hr class="w-90">
 
-            <form><!-- Form 2 -->
+             <form><!-- Form 2 -->
                 <h1 class="text-center">Add a Coffee</h1>
                 <div>
                     <!-- Select Input -->
-                    <label for="roast-selection2" class="d-block w-75"><h5>Roast</h5></label>
-                    <select id="roast-selection2" class="d-block w-75">
-                        <option>all</option>
+                    <label for="roast-selection2" class="d-block w-75 font-weight-bold">Roast</label>
+                    <select id="roast-selection2" class="d-block w-75 mb-2">
                         <option>light</option>
                         <option>medium</option>
                         <option>dark</option>
                     </select>
                 </div>
-                <!-- Search Box -->
+                <!-- Input Box -->
                 <div>
-                    <label for="userInput2" class="d-block w-75"><h5>Name</h5></label>
-                    <input id="userInput2" oninput="NewCoffee(this.value)" name="userInput" type="search" class="w-75">
-                    <!-- Submit Button -->
-                    <input id="addCoffee" type="submit" />
+                    <label for="userInput2" class="d-block w-75 font-weight-bold">Name</label>
+                    <input id="userInput2" name="userInput" type="search" class="w-75 mb-2">
+                </div>
+                <!-- Submit Button -->
+                <div>
+                    <input id="addCoffee" type="submit" class="d-block w-75 bg-primary"/>
                 </div>
             </form>
         </div>
